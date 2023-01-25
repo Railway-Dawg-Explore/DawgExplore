@@ -187,4 +187,6 @@ api.add_resource(User, "/user/<int:user_id>")
 api.add_resource(Users, "/users")
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=4000)
+    print(f"Server runs on {os.environ.get('PORT')}")
+    port = os.environ.get('PORT') if os.environ.get('PORT') else 4000
+    app.run(host='0.0.0.0', port=port)
