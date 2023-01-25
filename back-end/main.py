@@ -187,5 +187,5 @@ api.add_resource(User, "/user/<int:user_id>")
 api.add_resource(Users, "/users")
 
 if __name__ == '__main__':
-    print(f"Server runs on {os.getenv("PORT", default=4000)}")
+    print(f"Server runs on {os.getenv('PORT', default=4000)}")
     app.run(port=os.getenv("PORT", default=4000))
