@@ -1,4 +1,1 @@
-providers = ["...", "python"]
-
-[start]
-cmd = 'python main.py'
+providers = ["python"]
